@@ -1,0 +1,403 @@
+{
+  "productInfo": {
+    "productId": 16724069
+  },
+  "properties": [
+    {
+      "propertyId": 1,
+      "identifier": "ecl",
+      "propertyName": "无线信号覆盖等级",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 2,
+      "identifier": "pci",
+      "propertyName": "物理小区标识",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 3,
+      "identifier": "snr",
+      "propertyName": "信噪比",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"dB\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"分贝\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 4,
+      "identifier": "IMEI",
+      "propertyName": "IMEI",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 5,
+      "identifier": "IMSI",
+      "propertyName": "IMSI",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 6,
+      "identifier": "rsrp",
+      "propertyName": "参考信号接收功率",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 7,
+      "identifier": "sinr",
+      "propertyName": "信号与干扰加噪声比",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"dB\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"分贝\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 8,
+      "identifier": "ICCID",
+      "propertyName": "ICCID",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 9,
+      "identifier": "error",
+      "propertyName": "故障告警",
+      "description": null,
+      "dataType": "enum",
+      "dataSchema": "\"len\":1,\"enumDetail\":{\"1\":\"烟感故障\",\"2\":\"烟感故障解除\",\"3\":\"低压故障\",\"4\":\"低压故障解除\"}"
+    },
+    {
+      "propertyId": 10,
+      "identifier": "cell_ID",
+      "propertyName": "小区位置信息",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-2147483648\",\"len\":4,\"unitName\":\"\",\"max\":\"2147483647\""
+    },
+    {
+      "propertyId": 11,
+      "identifier": "muffling",
+      "propertyName": "消音",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-128\",\"len\":4,\"unitName\":\"\",\"max\":\"127\""
+    },
+    {
+      "propertyId": 12,
+      "identifier": "tx_Power",
+      "propertyName": "终端发射功率",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 13,
+      "identifier": "signalPower",
+      "propertyName": "信号强度",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 14,
+      "identifier": "smoke_state",
+      "propertyName": "烟雾监测状态",
+      "description": null,
+      "dataType": "enum",
+      "dataSchema": "\"len\":1,\"enumDetail\":{\"0\":\"烟雾报警\",\"1\":\"烟雾报警解除\"}"
+    },
+    {
+      "propertyId": 15,
+      "identifier": "smoke_value",
+      "propertyName": "烟雾浓度",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"%\",\"min\":\"1\",\"len\":4,\"unitName\":\"百分比\",\"max\":\"100\""
+    },
+    {
+      "propertyId": 16,
+      "identifier": "tamper_alarm",
+      "propertyName": "防拆报警",
+      "description": null,
+      "dataType": "enum",
+      "dataSchema": "\"len\":1,\"enumDetail\":{\"0\":\"设备装上\",\"1\":\"拆除报警\"}"
+    },
+    {
+      "propertyId": 17,
+      "identifier": "battery_value",
+      "propertyName": "电池电量",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"%\",\"min\":\"1\",\"len\":4,\"unitName\":\"百分比\",\"max\":\"100\""
+    },
+    {
+      "propertyId": 18,
+      "identifier": "muffling_resp",
+      "propertyName": "消音响应",
+      "description": null,
+      "dataType": "integer",
+      "dataSchema": "\"unit\":\"null\",\"min\":\"-32768\",\"len\":4,\"unitName\":\"\",\"max\":\"32767\""
+    },
+    {
+      "propertyId": 19,
+      "identifier": "terminal_type",
+      "propertyName": "终端型号",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 20,
+      "identifier": "heartbeat_time",
+      "propertyName": "心跳周期",
+      "description": null,
+      "dataType": "float",
+      "dataSchema": "\"unit\":\"h\",\"min\":\"0\",\"len\":4,\"unitName\":\"小时\",\"max\":\"100\""
+    },
+    {
+      "propertyId": 21,
+      "identifier": "battery_voltage",
+      "propertyName": "电池电压",
+      "description": null,
+      "dataType": "float",
+      "dataSchema": "\"unit\":\"V\",\"min\":\"0\",\"len\":4,\"unitName\":\"伏特\",\"max\":\"5\""
+    },
+    {
+      "propertyId": 22,
+      "identifier": "hardware_version",
+      "propertyName": "硬件版本",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 23,
+      "identifier": "software_version",
+      "propertyName": "软件版本",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    },
+    {
+      "propertyId": 24,
+      "identifier": "manufacturer_name",
+      "propertyName": "厂家名称",
+      "description": null,
+      "dataType": "vary-string",
+      "dataSchema": "\"len\":0,\"unit\":\"null\",\"unitName\":\"\""
+    }
+  ],
+  "services": [
+    {
+      "serviceId": 1,
+      "identifier": "data_report",
+      "serviceName": "烟感报警上报",
+      "serviceType": "DataReport",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 14,
+          "serial": 1
+        },
+        {
+          "propertyId": 15,
+          "serial": 2
+        },
+        {
+          "propertyId": 17,
+          "serial": 3
+        },
+        {
+          "propertyId": 13,
+          "serial": 4
+        },
+        {
+          "propertyId": 3,
+          "serial": 5
+        },
+        {
+          "propertyId": 12,
+          "serial": 6
+        },
+        {
+          "propertyId": 10,
+          "serial": 7
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 9001,
+      "identifier": "cmd_resp",
+      "serviceName": "消音响应",
+      "serviceType": "CommandResponse",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 18,
+          "serial": 1
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 1001,
+      "identifier": "tamper_report",
+      "serviceName": "防拆报警",
+      "serviceType": "EventReport",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 16,
+          "serial": 1
+        },
+        {
+          "propertyId": 17,
+          "serial": 2
+        },
+        {
+          "propertyId": 13,
+          "serial": 3
+        },
+        {
+          "propertyId": 3,
+          "serial": 4
+        },
+        {
+          "propertyId": 12,
+          "serial": 5
+        },
+        {
+          "propertyId": 10,
+          "serial": 6
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 2,
+      "identifier": "heartbeat",
+      "serviceName": "心跳",
+      "serviceType": "DataReport",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 20,
+          "serial": 1
+        },
+        {
+          "propertyId": 24,
+          "serial": 2
+        },
+        {
+          "propertyId": 19,
+          "serial": 3
+        },
+        {
+          "propertyId": 22,
+          "serial": 4
+        },
+        {
+          "propertyId": 23,
+          "serial": 5
+        },
+        {
+          "propertyId": 4,
+          "serial": 6
+        },
+        {
+          "propertyId": 5,
+          "serial": 7
+        },
+        {
+          "propertyId": 8,
+          "serial": 8
+        },
+        {
+          "propertyId": 17,
+          "serial": 9
+        },
+        {
+          "propertyId": 21,
+          "serial": 10
+        },
+        {
+          "propertyId": 6,
+          "serial": 11
+        },
+        {
+          "propertyId": 7,
+          "serial": 12
+        },
+        {
+          "propertyId": 2,
+          "serial": 13
+        },
+        {
+          "propertyId": 1,
+          "serial": 14
+        },
+        {
+          "propertyId": 10,
+          "serial": 15
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 1002,
+      "identifier": "error_code_report",
+      "serviceName": "故障上报",
+      "serviceType": "EventReport",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 9,
+          "serial": 1
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 1003,
+      "identifier": "smoke_state_report",
+      "serviceName": "烟感监测状态报警",
+      "serviceType": "EventReport",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 14,
+          "serial": 1
+        },
+        {
+          "propertyId": 15,
+          "serial": 2
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "serviceId": 8001,
+      "identifier": "cmd",
+      "serviceName": "消音下发",
+      "serviceType": "Command",
+      "description": null,
+      "properties": [
+        {
+          "propertyId": 11,
+          "serial": 1
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}
