@@ -1,6 +1,14 @@
 package thingmodel
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"errors"
+	"github.com/dingdaoyi/LIot/config"
+)
+
+var (
+	log = config.GetLogger()
+)
 
 type ThingSpecificationLanguage struct {
 	Schema     string       `json:"schema"`
@@ -15,7 +23,10 @@ type Profile struct {
 	ProductKey string `json:"productKey"`
 }
 
+type SpecExt map[string]interface{}
+
 type Specs struct {
+	*SpecExt
 	Identifier string   `json:"identifier"`
 	Name       string   `json:"name"`
 	DataType   DataType `json:"dataType"`
@@ -24,6 +35,30 @@ type Specs struct {
 type DataType struct {
 	Type  string      `json:"type"`
 	Specs interface{} `json:"specs"`
+}
+
+const (
+	ARRAY  = "array"
+	STRUCT = "struct"
+)
+
+// IsStruct 是否为结构体
+func (d *DataType) IsStruct() bool {
+	return d.Type == STRUCT
+}
+
+// GetStructSpecs 获取具体定义，统一转换成切片处理
+func (d *DataType) GetStructSpecs() (*[]Specs, error) {
+	if d.Type != STRUCT {
+		return nil, errors.New("struct类型数据才能展开！")
+	}
+	result := make([]Specs, 0)
+	arr, err := json.Marshal(d.Specs)
+	if err != nil {
+		return nil, err
+	}
+	err = json.Unmarshal(arr, &result)
+	return &result, err
 }
 
 type FunctionParam struct {

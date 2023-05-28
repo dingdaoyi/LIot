@@ -1,6 +1,7 @@
 package thingmodel
 
 import (
+	"encoding/json"
 	"github.com/dingdaoyi/LIot/config"
 	"os"
 	"testing"
@@ -21,7 +22,13 @@ func TestNewThingSpecificationLanguage(t *testing.T) {
 	properties := result.Properties
 	if len(properties) > 0 {
 		for _, eee := range properties {
-			logger.Info().Msg(eee.Name)
+			specs, err := eee.DataType.GetStructSpecs()
+			if err != nil {
+				log.Error().Msg(err.Error())
+				continue
+			}
+			marshal, err := json.Marshal(specs)
+			log.Info().Msg(string(marshal))
 		}
 	}
 }
